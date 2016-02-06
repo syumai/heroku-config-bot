@@ -1,0 +1,20 @@
+{
+  "name": "heroku-config-bot",
+  "version": "1.0.0",
+  "description": "Slack bot for setting configurations of Heroku server.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/syumai/heroku-config-bot/"
+  },
+  "author": "syumai",
+  "license": "MIT",
+  "dependencies": {
+    "botkit": "0.0.5",
+    "node-libcurl": "^0.7.0",
+    "request": "^2.69.0"
+  }
+}
