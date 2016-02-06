@@ -1,8 +1,8 @@
 # Heroku Config Bot
-* Herokuの環境変数を設定してくれるSlack botです。
+* Herokuサーバの環境変数を設定してくれるSlack botです。
 
-## 設定内容
-* Basic Auth (Switch ON/OFF)
+## 設定する環境変数
+* AUTH_ENABLED ('true' / 'false')
 * USER
 * PASS
 
