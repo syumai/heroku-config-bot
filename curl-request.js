@@ -16,7 +16,6 @@ CurlRequest.prototype.get = function(callback){
     this.curl.on('end', function(statusCode, body, headers) {
         if(statusCode == 200) {
             var data = JSON.parse(body);
-            console.log(data);
             callback(data);
         } else {
             console.error(body);
