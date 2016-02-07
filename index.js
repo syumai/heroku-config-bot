@@ -23,7 +23,7 @@ controller.spawn({
     }
 });
 
-controller.hears(['おはよう', 'こんにちは', 'こんばんは', 'おつかれ', 'お疲れ'], ['direct_message', 'direct_mention', 'mention'], function(bot, msg) {
+controller.hears(['おはよう', 'こんにちは', 'こんばんは', 'おやすみ', 'おつかれ', 'お疲れ'], ['direct_message', 'direct_mention', 'mention'], function(bot, msg) {
     bot.api.reactions.add({
         timestamp: msg.ts,
         channel: msg.channel,
@@ -34,6 +34,7 @@ controller.hears(['おはよう', 'こんにちは', 'こんばんは', 'おつ�
     if (msg.text.indexOf('おはよう') > -1) reply += 'おはようございます！';
     else if (msg.text.indexOf('こんにちは') > -1) reply += 'こんにちは！';
     else if (msg.text.indexOf('こんばんは') > -1) reply += 'こんばんは！';
+    else if (msg.text.indexOf('おやすみ') > -1) reply += 'おやすみなさい！';
     else if ((msg.text.indexOf('お疲れ') > -1) || (msg.text.indexOf('おつかれ') > -1)) {
         reply += 'お疲れさまです！';
     }
